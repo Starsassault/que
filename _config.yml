@@ -5,11 +5,16 @@ author_name:        "Heiswayi Nrird" # change this to your name
 logo_url:           https://avatars0.githubusercontent.com/u/13794983?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://heiswayi.github.io # main url
-baseurl:            /the-plain
+url:                https://starsassault.github.io/whatever/ # main url
+baseurl:            /
 permalink:          /:title # Post permalink
+discus_identifier:  eudemonis
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
+paginate:           1
+paginate_path:      "Blog/page:num"
+paginate_content:
+  auto: true
 
 # Site Build
 highlighter:        rouge
@@ -24,7 +29,7 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
 plugins:
   - jekyll-sitemap
-
+  - jekyll-paginate
 
 
 defaults:
