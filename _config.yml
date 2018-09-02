@@ -11,6 +11,7 @@ permalink:          /:title # Post permalink
 discus_identifier:  eudemonis
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
+<<<<<<< HEAD
 
 
 # Pagination Settings
@@ -23,6 +24,12 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+=======
+paginate:           1
+paginate_path:      "/que/page:num"
+paginate_content:
+  auto: true
+>>>>>>> parent of 05c1427... pagination v2
 
 # Produces a cleaner folder structure when using categories
 permalink: /:year/:month/:title.html
@@ -40,11 +47,16 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
 plugins:
   - jekyll-sitemap
+<<<<<<< HEAD
 plugins_dir:
   - jekyll-paginate-v2
 exclude:
   - Gemfile
   - Gemfile.lock
+=======
+  - jekyll-paginate
+
+>>>>>>> parent of 05c1427... pagination v2
 
 defaults:
   -
