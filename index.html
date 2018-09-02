@@ -81,4 +81,26 @@ layout: default
 	</div>
 
 
+	<!-- Pagination links -->
+	<div class="page-navigation code">
+	  {% if paginator.previous_page %}
+	    <a href="{{ paginate.previous_page_path }}" class="previous">&lt;</a>
+			<span> &middot; </span>
+	  {% else %}
+	    <span class="previous"></span>
+
+	  {% endif %}
+		<a class="home" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}" title="Back to Index">Index</a>
+
+	<!--  <span class="page_number ">
+	    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+	  </span>-->
+	  {% if paginator.next_page %}
+		<span> &middot; </span>
+	    <a href="{{ paginate.next_page_path  | prepend: site.baseurl | prepend: site.url }}" class="next">&gt;</a>
+	  {% else %}
+	    <span class="next "></span>
+	  {% endif %}
+	</div>
+
 </section>
