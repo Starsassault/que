@@ -2,7 +2,8 @@ source "https://rubygems.org"
 gemspec
 group :jekyll_plugins do
     gem "jekyll-sitemap"
-    gem "jekyll-paginate"
+    gem "jekyll-paginate-v2"
+    gem "jekyll-feed"
 end
 gem 'html-proofer'
 gem 'tzinfo'
