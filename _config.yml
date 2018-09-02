@@ -6,13 +6,13 @@ logo_url:           https://avatars0.githubusercontent.com/u/13794983?v=4 # Get 
 
 # Site Settings
 url:                https://starsassault.github.io # main url
-baseurl:            /que
+baseurl:            /blog
 permalink:          /:title # Post permalink
 discus_identifier:  eudemonis
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
 paginate:           1
-paginate_path:      "/que/page:num"
+paginate_path:      "/blog/page:num"
 paginate_content:
   auto: true
 
